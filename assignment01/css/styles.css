@@ -1,0 +1,90 @@
+/* Global styles for the entire document */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../img/pic.jpeg'), url('../img/jerry.jpeg'); 
+    background-size: 45%, 30%; 
+    background-repeat: no-repeat;
+    background-position: left, right;
+    color: #8c593b; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: peachpuff; /* Background color for the entire body */
+}
+
+/* Styling for the header section */
+header {
+    background-color: #ffcc00;
+    padding: 20px; 
+}
+
+/* Styling for the header's h1 element */
+header h1 {
+    color: #ff3333;
+    font-size: 48px; /* Bigger font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Add some letter spacing */
+}
+
+/* Styling for sections in the document */
+section {
+    margin-bottom: 20px;
+}
+
+/* Styling for buttons */
+button {
+    background-color: #ffcc00;
+    color: #8c593b; /* Light brown text color */
+    padding: 15px 30px; /* Increased padding for more space */
+    font-size: 20px; /* Bigger font size */
+    margin: 10px; /* Increased margin */
+    cursor: pointer;
+    border: 3px solid red; /* Set the border color to red by default */
+    border-radius: 15px; /* Increased border-radius */
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease; /* Added border-color to the transition */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #ff9900;
+    transform: scale(1.1); /* Slightly increased scale on hover */
+    border-color: red; /* Added red border on hover */
+}
+
+/* Styling for the #story element */
+#story {
+    font-size: 24px; /* Bigger font size */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Pseudo-element for #story, adding emoji before the content */
+#story::before {
+    content: '\1F431\1F42D';
+    font-size: 48px; /* Bigger emoji size */
+    margin-right: 20px; /* Increased margin */
+    animation: bounce 1s infinite alternate;
+}
+
+/* Keyframes for the bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px); /* Increased translateY on animation */
+    }
+}
+
+/* Styling for the footer section */
+footer {
+    background-color: #ffcc00;
+    padding: 20px; /* Increased padding for more space */
+}
+
+/* Styling for paragraphs inside the footer */
+footer p {
+    margin: 0;
+    font-size: 18px; /* Bigger font size */
+}

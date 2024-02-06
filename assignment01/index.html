@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information -->
+    <meta charset="utf-8" />
+    <title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Title and student ID placeholder -->
+        <h1>See-N-Say Storymaker - Tom and Jerry Edition</h1>
+        <p id="studentId"></p>
+    </header>
+
+    <!-- First section for story creation buttons -->
+    <section>
+        <h2>Create Your Story</h2>
+        <!-- Buttons for different story elements -->
+        <button id="noun1">Character</button>
+        <p id="choosenNoun1"></p>
+        <button id="verb">Action</button>
+        <p id="choosenVerb"></p>
+        <button id="adjective">Adjective</button>
+        <p id="choosenAdjective"></p>
+        <button id="noun2">Object</button>
+        <p id="choosenNoun2"></p>
+        <button id="setting">Location</button>
+        <p id="choosenSetting"></p>
+    </section>
+
+    <!-- Second section for playback controls -->
+    <section>
+        <h2>See Your Story</h2>
+        <!-- Buttons for playback, random story, and reset -->
+        <button id="playback">Show Story</button>
+        <button id="random">Random Story</button>
+        <button id="reset">Reset</button>
+        <!-- Empty paragraph to display the story -->
+        <p id="story"></p>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright information -->
+        <p>&copy; 2024 Amit Gurung</p>
+    </footer>
+
+    <!-- Script for storymaker functionality -->
+    <script src="js/storymaker.js"></script>
+</body>
+
+</html>
